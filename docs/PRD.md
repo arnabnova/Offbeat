@@ -824,3 +824,36 @@ Free-tier cautions
 • Call every external API from the server, never the browser, and cache responses so public servers are not hit twice for the same query.
 • Several free tiers forbid commercial use. If the app gains real traffic or revenue, plan to move to paid plans or self-host.
 • Results will be thinner in places with sparse map data, so label low-confidence results and hide empty slots.
+14. Visual design
+The app should feel like a photo-led travel app at dusk: misty landscapes, soft glass cards, large light headlines and warm glowing accents. It is designed for phones first. The design canvas "OffBeat: look and feel" shows three phone screens (home, your plan, place detail); use it as the reference when building the UI. The canvas uses drawn scenes as stand-ins for photographs.
+Look
+Element
+Direction
+Mood
+Dark, calm and atmospheric: deep teal-slate backgrounds, mist, a warm amber glow
+Colours
+Slate #0E2A33 (background), near-white #F2F7F7 (text), amber #F4A259 (buttons and highlights), glass panels of dark teal at about 60% opacity with a thin white border
+Type
+Outfit, a clean geometric sans (free on Google Fonts), in a light weight for large headlines and regular weights for text
+Cards
+Rounded, translucent "glass" panels with a background blur, sitting over a full-bleed photograph
+Buttons
+Large rounded buttons, amber with dark text for the main action; chips for modes and hobbies that scroll sideways on a phone
+Icons
+One line-icon set (for example Lucide, free); no emoji
+Photography
+• The home screen and every place card are led by a real photograph with a dark overlay so white text stays readable.
+• Place photos come from Wikimedia Commons, with the credit and licence shown on the card.
+• Home and header photos come from a free-licence source such as Unsplash or Pexels; check each photo's licence and keep a credit in the app's about page.
+• A place with no photo gets a dark, misty illustrated scene matched to its scenery type, so a card never shows an empty box.
+• Do not use photos copied from other websites.
+Screens
+• Home: full-screen photo, the headline "Beyond the beaten path", and a glass search card with destination, days, mode chips, hobby chips, scenery choice and the "Plan my trip" button.
+• Your plan: a photo header with the city and the chosen modes, then a scrolling list of glass place cards, each with photo, area type, scenery, crowd estimate, speciality, reach, stay, eat and a link to details.
+• Place detail: a large photo with the place name over it, the description, why it suits the traveler, how to reach it, stay and eat cards, the six tips with their sources, and add-to-trip and report buttons.
+• Wide screens: the same screens widen into a two-column layout, with the place list on one side and a map on the other.
+Behaviour and quality
+• Loading shows skeleton cards, and places appear as they arrive.
+• Text on photos always sits on a dark overlay or glass panel and meets contrast guidelines.
+• Touch targets are at least 44 px and icon-only buttons have labels.
+• Crowd level and similar guesses are always marked as estimates.

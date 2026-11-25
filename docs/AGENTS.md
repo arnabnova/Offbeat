@@ -6,3 +6,6 @@
 - Keep keys in .env.local. Never print them or commit them.
 - Keep each change small and list the files you changed.
 - If something is unclear, ask before guessing.
+- Use the free build in PRD section 13 (OpenStreetMap, Wikipedia, Open-Meteo). Do not add paid APIs.
+- Follow PRD section 14 for visual design: mobile first, dark slate background, glass cards, amber accent, Outfit font.
+- The supported cities live in the database, not in code.
